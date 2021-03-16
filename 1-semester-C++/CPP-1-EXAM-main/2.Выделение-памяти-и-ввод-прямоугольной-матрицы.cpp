@@ -16,7 +16,7 @@ int main()
     int m; cout << "Введите кол столбцов m = "; cin >> m;
 
     //выделение памяти
-    int** mat = new int* [n*m];
+    int** mat = new int* [n];
     for (int i = 0; i < n; i++)
     {
         mat[i] = new int[m];
