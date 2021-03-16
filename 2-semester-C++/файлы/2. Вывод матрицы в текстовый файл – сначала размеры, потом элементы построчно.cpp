@@ -24,7 +24,7 @@ int** inputMat(int** mat, int n, int m) {
 }
 
 int** printMat(int** mat, int n, int m) {
-    cout << "Ìàòğèöà: " << endl;
+    cout << "ÃŒÃ Ã²Ã°Ã¨Ã¶Ã : " << endl;
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -40,13 +40,13 @@ int** fileAddMat(int** mat, int n, int m) {
     string filePath = "test.txt";
     ofstream out(filePath);
 
-    out << "Ñòğîê = ";
+    out << "Ã‘Ã²Ã°Ã®Ãª = ";
     out << n << endl;
 
-    out << "Ñòîëáöîâ = ";
+    out << "Ã‘Ã²Ã®Ã«Ã¡Ã¶Ã®Ã¢ = ";
     out << m << endl;
 
-    out << "Ìàòğèöà:" << endl;
+    out << "ÃŒÃ Ã²Ã°Ã¨Ã¶Ã :" << endl;
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -73,33 +73,33 @@ int** deleteMat(int** mat, int n) {
 
 int main()
 {
-    //ğóññèêé ÿçûê
+    //Ã°Ã³Ã±Ã±Ã¨ÃªÃ© Ã¿Ã§Ã»Ãª
     setlocale(LC_ALL, "Russian");
-    //÷òîáû ÷èñëà ğàíäîìà ìåíÿëèñü
+    //Ã·Ã²Ã®Ã¡Ã» Ã·Ã¨Ã±Ã«Ã  Ã°Ã Ã­Ã¤Ã®Ã¬Ã  Ã¬Ã¥Ã­Ã¿Ã«Ã¨Ã±Ã¼
     srand(time(NULL));
 
-    //êîë ñòğîê
+    //ÃªÃ®Ã« Ã±Ã²Ã°Ã®Ãª
     int n = 2 + rand() % 4;
 
-    //êîë ñòîëáöîâ
+    //ÃªÃ®Ã« Ã±Ã²Ã®Ã«Ã¡Ã¶Ã®Ã¢
     int m = 2 + rand() % 4;
 
-    cout << "Ñòğîê = " << n << endl;
-    cout << "Ñòîëáöîâ = " << m << endl;
+    cout << "Ã‘Ã²Ã°Ã®Ãª = " << n << endl;
+    cout << "Ã‘Ã²Ã®Ã«Ã¡Ã¶Ã®Ã¢ = " << m << endl;
 
-    //âûäåëåíèå ïàìÿòè
-    int** mat = new int* [n * m];
+    //Ã¢Ã»Ã¤Ã¥Ã«Ã¥Ã­Ã¨Ã¥ Ã¯Ã Ã¬Ã¿Ã²Ã¨
+    int** mat = new int* [n];
     memoryMat(mat, n, m);
 
-    //ââîä ïğÿìîóã ìàòğèöû
+    //Ã¢Ã¢Ã®Ã¤ Ã¯Ã°Ã¿Ã¬Ã®Ã³Ã£ Ã¬Ã Ã²Ã°Ã¨Ã¶Ã»
     inputMat(mat, n, m);
 
-    // âûâîä íàøåé ìàòğèöû
+    // Ã¢Ã»Ã¢Ã®Ã¤ Ã­Ã Ã¸Ã¥Ã© Ã¬Ã Ã²Ã°Ã¨Ã¶Ã»
     printMat(mat, n, m);
 
-    //ëîãèêà
+    //Ã«Ã®Ã£Ã¨ÃªÃ 
     fileAddMat(mat, n, m);
 
-    //óäàëåíèå ïàìÿòè
+    //Ã³Ã¤Ã Ã«Ã¥Ã­Ã¨Ã¥ Ã¯Ã Ã¬Ã¿Ã²Ã¨
     deleteMat(mat, n);
 }
