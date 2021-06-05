@@ -6,7 +6,7 @@
 using namespace std;
 
 class Person {
-private:
+public:
     string name = "";
     string surname = "";
     string middleName = "";
@@ -14,56 +14,7 @@ private:
     string group = "";
     string institute = "";
     string direction = "";
-public:
-    // name
-    void setName(string name) {
-        this->name = name;
-    }
-    string getName() {
-        return name;
-    }
-    // surname
-    void setSurname(string surname) {
-        this->surname = surname;
-    }
-    string getSurname() {
-        return surname;
-    }
-    // middleName
-    void setMiddleName(string middleName) {
-        this->middleName = middleName;
-    }
-    string getMiddleName() {
-        return middleName;
-    }
-    // age
-    void setAge(int age) {
-        this->age = age;
-    }
-    int getAge() {
-        return age;
-    }
-    // group
-    void setGroup(string group) {
-        this->group = group;
-    }
-    string getGroup() {
-        return group;
-    }
-    // institute
-    void setInstitute(string institute) {
-        this->institute = institute;
-    }
-    string getInstitute() {
-        return institute;
-    }
-    // direction
-    void setDirection(string direction) {
-        this->direction = direction;
-    }
-    string getDirection() {
-        return direction;
-    }
+
     void print() {
         cout << "name: " << name << endl;
         cout << "surname: " << surname << endl;
@@ -84,13 +35,13 @@ int main() {
 
 
     Person rodion;
-    rodion.setName("rodion");
-    rodion.setSurname("ramazanov");
-    rodion.setMiddleName("mikhailovich");
-    rodion.setAge(18);
-    rodion.setGroup("09033");
-    rodion.setInstitute("ÈÂÌÈÈÒ");
-    rodion.setDirection("ÔÈÈÒ");
+    rodion.name = "rodion"''
+    rodion.surname = "ramazanov"''
+    rodion.middleName = "mikhailovich"''
+    rodion.age = 18'
+    rodion.group = "09033"''
+    rodion.institute = "ÈÂÌÈÈÒ"''
+    rodion.direction = "ÔÈÈÒ";
     rodion.print();
 
     return 0;
