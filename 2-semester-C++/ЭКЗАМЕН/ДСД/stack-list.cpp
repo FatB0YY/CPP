@@ -11,6 +11,7 @@ public:
 	void pop();
 	void clear();
 	void push(T data);
+	void print();
 	bool empty();
 	int GetSize() { return Size; }
 private:
@@ -63,7 +64,7 @@ void Stack<T>::pop() {
 template<typename T>
 void Stack<T>::clear() {
 	while (Size) {
-		pop_front();
+		pop();
 	}
 }
 
@@ -76,9 +77,18 @@ void Stack<T>::push(T data) {
 }
 
 template<typename T>
-bool Stack<T>::empty(){
+void Stack<T>::print(){
+	Node<T>* currentEl = head;
+	while (currentEl != nullptr){
+		cout << "el: " << currentEl->data << endl;
+		currentEl = currentEl->next;
+	}
+}
+
+template<typename T>
+bool Stack<T>::empty() {
 	if (GetSize() == 0) {
-		return true
+		return true;
 	}
 	else {
 		return false;
@@ -90,7 +100,7 @@ int main() {
 
 	Stack<double> stk;
 
-	
+
 	stk.push(1);
 	stk.push(1);
 	stk.pop();
@@ -98,6 +108,7 @@ int main() {
 	stk.push(99);
 	stk.push(100.5);
 
+	stk.print();
 
 	cout << "size: " << stk.GetSize() << endl;
 	return 0;
