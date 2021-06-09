@@ -73,7 +73,6 @@ template<typename T>
 void Stack<T>::push(T data) {
 	head = new Node<T>(data, head);
 	Size++;
-
 }
 
 template<typename T>
@@ -83,6 +82,11 @@ void Stack<T>::print(){
 		cout << "el: " << currentEl->data << endl;
 		currentEl = currentEl->next;
 	}
+}
+
+template<typename T>
+T Stack<T>::top(){
+	return head->data;
 }
 
 template<typename T>
