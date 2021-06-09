@@ -32,8 +32,14 @@ int main() {
 	cout << endl;
 	cout << "The top element of the queue: " << que.front() << endl;  															 
 	que.pop();  // deleting the top element
-	cout << "New first item (after deletion): " << que.front() << endl;
+	cout << "New first item (after deletion): " << que.front() << endl;	
 	if (!que.empty()) cout << "The queue is not empty!";  // check if the queue is empty(no)
+
+	    while (!que.empty()) {
+        cout << que.front() << endl;
+        cout << "els count = " << que.size() << endl;
+        que.pop();
+    }
 
 	return 0;
 }
