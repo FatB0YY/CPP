@@ -49,4 +49,4 @@ Programs are console applications; some print prompts and output in Russian, and
 
 ## Author
 
-Rodion Ramazanov — [GitHub](https://github.com/FatB0YY) · [Telegram](https://t.me/iamrodionn)
+Rodion Ramazanov — [GitHub](https://github.com/FatB0YY) · [Telegram](https://t.me/iamrodionn) 
