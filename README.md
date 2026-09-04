@@ -4,7 +4,7 @@
 
 University C++ coursework from two semesters of computer science at Kazan Federal University: around a hundred small programs covering algorithms, arrays and matrices, string processing, dynamic data structures, OOP, templates, the STL and file I/O.
 
-> **Note.** This repository is kept as a historical archive of my CS coursework. Folder and file names inside are in Russian, as originally submitted — an English guide to each folder is below. For my current work, see the [pinned repositories on my profile](https://github.com/FatB0YY).
+> **Note.** This repository is kept as a historical archive of my CS coursework. Folder and file names inside are in Russian, as originally submitted — an English guide to each folder is below. My professional work is in front-end development; see the [pinned repositories on my profile](https://github.com/FatB0YY).
 
 ## Semester 1 — `1-semester-C++`
 
